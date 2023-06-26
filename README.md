@@ -39,7 +39,7 @@ to be installed on your system, from the `oligomap` image with the command:
 ```bash
 docker pull zavolab/oligomap:1.0
 ```
-> NOTE: `Oligomap` will soon be a `BioContainer` image.
+> NOTE: `Oligomap` will soon be a [BioContainer](biocontainer) image.
 
 ### Building from source
 
@@ -132,5 +132,6 @@ If you use oligomap in your research, please cite:
 This project is covered by the [GPL-3.0](LICENSE) License.
 
 [bioconda]: <https://bioconda.github.io/>
+[biocontainer]: <https://biocontainers-edu.readthedocs.io/en/latest/what_is_biocontainers.html>
 [conda]: <https://docs.conda.io/projects/conda/en/latest/index.html>
 [docker]: <https://docs.docker.com/>
