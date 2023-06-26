@@ -52,7 +52,7 @@ git clone https://github.com/zavolanlab/oligomap.git
 cd oligomap
 ```
 
-In order to build the program, traverse to the `installation` directory and
+In order to build the program, traverse to the [install](install) directory and
 use the commands:
 
 ```
