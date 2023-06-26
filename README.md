@@ -29,16 +29,17 @@ to be installed on your system before proceeding.
 conda install -c dblue oligomap
 ```
 
-> NOTE: `Oligomap` will be soon moved to the [Bioconda](bioconda) channel.
+> NOTE: `Oligomap` will soon be moved to the [Bioconda](bioconda) channel.
 
 ### With Docker
 
-You can also pull `oligomap` [docker](docker) image with the command:
+You can create a new container using the [docker](docker) platfrom, which needs
+to be installed on your system, from the `oligomap` image with the command:
 
 ```bash
 docker pull zavolab/oligomap:1.0
 ```
-> NOTE: `Oligomap` will be a `BioContainer` image.
+> NOTE: `Oligomap` will soon be a `BioContainer` image.
 
 ### Building from source
 
@@ -117,7 +118,7 @@ docker run oligomap target.fa query.fa
 ## Test data
 
 Under the [test](test) directory you can find test data. Consult the
-[README](test/README.md) located there for usage examples.
+[README](test/README.md) file located there for usage examples.
 
 ## Citing Oligomap
 
