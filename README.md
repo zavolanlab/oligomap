@@ -25,7 +25,7 @@ will require ~2GB of memory.
 `Oligomap` can be installed using package manager [Conda](conda), which needs
 to be installed on your system before proceeding.
 
-```
+```bash
 conda install -c dblue oligomap
 ```
 
@@ -38,7 +38,7 @@ To install `oligomap`, you must ensure you have installed in your system
 `autoconf`, `automake`, `cmake` and `libtool`. If you don't, you can install
 them with the command:
 
-```
+```bash
 sudo apt-get install libtool cmake automake autoconf
 ```
 
@@ -47,7 +47,7 @@ In addition, you need to ensure that the `g++` compiler has the minimum version
 Once these dependencies are available, traverse to the desired path on your
 file system, then clone the repository and change into it with:
 
-```
+```bash
 git clone https://github.com/zavolanlab/oligomap.git
 cd oligomap
 ```
@@ -55,14 +55,14 @@ cd oligomap
 In order to build the program, traverse to the [install](install) directory and
 use the commands:
 
-```
+```bash
 ./configure
 make
 ```
 
 If you have root permissions you can install `oligomap` with the command:
 
-```
+```bash
 sudo make install
 ```
 
@@ -88,14 +88,14 @@ the output must be redirected.
 If you just built the program, you can run it from the directory where the
 executable is with the command:
 
-```
+```bash
 ./oligomap target.fa query.fa
 ```
 
 If you installed `oligomap` using [Conda](conda) or with `make install`, you can
 run it from any directory with the command:
 
-```
+```bash
 oligomap target.fa query.fa
 ```
 
