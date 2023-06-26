@@ -1,7 +1,7 @@
 ## Description
 
-This directory contains contains exemplary data for each of the following
-examples. The `genomic_ref.fa` file contains a sequence of 10000 nucleotides
+This directory contains data for each of the following examples.
+The `genomic_ref.fa` file contains a sequence of 10000 nucleotides
 from the _Homo sapiens_ chromosome 19 reference sequence. The `test_library.fa`
 file contains a set of 250 small RNA sequences build with a custom script.
 
