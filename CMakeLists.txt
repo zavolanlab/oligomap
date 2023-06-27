@@ -10,7 +10,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # name of the executable
-add_executable(oligomap "")
+add_executable(oligomap install/oligomap.cpp)
 
 # its sources
 target_sources(oligomap
