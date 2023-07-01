@@ -26,10 +26,8 @@ will require ~2GB of memory.
 to be installed on your system before proceeding.
 
 ```bash
-conda install -c dblue oligomap
+conda install -c bioconda oligomap
 ```
-
-> NOTE: `Oligomap` will soon be moved to the [Bioconda](bioconda) channel.
 
 ### With Docker
 
@@ -131,7 +129,6 @@ If you use oligomap in your research, please cite:
 
 This project is covered by the [GPL-3.0](LICENSE) License.
 
-[bioconda]: <https://bioconda.github.io/>
 [biocontainer]: <https://biocontainers-edu.readthedocs.io/en/latest/what_is_biocontainers.html>
 [conda]: <https://docs.conda.io/projects/conda/en/latest/index.html>
 [docker]: <https://docs.docker.com/>
