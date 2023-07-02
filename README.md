@@ -35,9 +35,8 @@ You can create a new container using the [docker](docker) platfrom, which needs
 to be installed on your system, from the `oligomap` image with the command:
 
 ```bash
-docker pull zavolab/oligomap:1.0
+docker pull quay.io/biocontainers/oligomap:1.0.1--hdcf5f25_0
 ```
-> NOTE: `Oligomap` will soon be a [BioContainer](biocontainer) image.
 
 ### Building from source
 
