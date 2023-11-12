@@ -3,9 +3,10 @@
 1. **[Introduction](#introduction)**
 2. **[Installation](#installation)**
 3. **[Usage](#usage)**
-4. **[Test data](#test-data)**
-5. **[Citing Oligomap](#citing-oligomap)**
-6. **[License](#license)**
+4. **[Output Format](#output-format)**
+5. **[Test data](#test-data)**
+6. **[Citing Oligomap](#citing-oligomap)**
+7. **[License](#license)**
 
 ## Introduction
 
@@ -111,6 +112,31 @@ command:
 ```bash
 docker run oligomap target.fa query.fa
 ```
+
+## Output format
+
+`Oligomap` returns the alignment's data in 6 lines:
+
+- The first line contains the read's name, its length, the start and end
+mapped positions in the read's sequence, the reference sequence name and, the
+start and end mapped positions in the reference sequence in this order.
+- The second line, contains the reference sequence name.
+- The third line, contains the fields "errors:" and "orientation:" with the
+alignment's number of errors and reference sequence strand.
+- The fourth and sixth lines are the read and reference sequences
+respectively.
+- The fifth line contains a vertical bar for each match between the sequences
+base pairs or a space otherwise.
+
+Alignments are separated with a blank line.
+
+The report created when setting the flag `-r PATH`, consists on a three-field
+table with the following content:
+
+- The read's name
+- The number of alignments found for that read with no errors
+- The number of alignments found for that read with a single error
+
 
 ## Test data
 
