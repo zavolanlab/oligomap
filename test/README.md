@@ -10,34 +10,34 @@ file contains a set of 250 small RNA sequences build with a custom script.
 In this section, one example per CLI option will be seen. Each of which, will
 use the same set of small RNA sequences and the same set of genomic references.
 Note that the directory used in the third example contains exactly the same
-reference sequence but splitted in different files.
+reference sequence but split in different files.
 
 ### Example 1 | Basic usage
 
 ```bash
-oligomap genomic_ref.fa test_library.fa > results.fa
+oligomap genomic_ref.fa test_library.fa > results.oligomap
 ```
 
 ### Example 2 | Generate a match report
 
 ```bash
-oligomap genomic_ref.fa test_library.fa -r report.txt > results.fa
+oligomap genomic_ref.fa test_library.fa -r report.txt > results.oligomap
 ```
 
 ### Example 3 | Use directory as a target
 
 ```bash
-oligomap genome_seqs/ test_library.fa -d > dir_results.fa
+oligomap genome_seqs/ test_library.fa -d > dir_results.oligomap
 ```
 
 ### Example 4 | Scan only target plus strand
 
 ```bash
-oligomap genomic_refs.fa test_library.fa -s > plus_strand_results.fa
+oligomap genomic_refs.fa test_library.fa -s > plus_strand_results.oligomap
 ```
 
 ### Example 5 | Set maximum number of hits
 
 ```bash
-oligomap genomic_refs.fa test_library.fa -m 2 > m_2_results.fa
+oligomap genomic_refs.fa test_library.fa -m 2 > m_2_results.oligomap
 ```
