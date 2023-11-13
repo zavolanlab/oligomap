@@ -3,9 +3,10 @@
 1. **[Introduction](#introduction)**
 2. **[Installation](#installation)**
 3. **[Usage](#usage)**
-4. **[Test data](#test-data)**
-5. **[Citing Oligomap](#citing-oligomap)**
-6. **[License](#license)**
+4. **[Output Format](#output-format)**
+5. **[Test data](#test-data)**
+6. **[Citing Oligomap](#citing-oligomap)**
+7. **[License](#license)**
 
 ## Introduction
 
@@ -110,6 +111,57 @@ command:
 
 ```bash
 docker run oligomap target.fa query.fa
+```
+
+## Output format
+
+`Oligomap` returns the alignment's data in 6 lines:
+
+- The first line contains the read's name, its length, the start and end
+mapped positions in the read's sequence, the reference sequence name and, the
+start and end mapped positions in the reference sequence in this order.
+- The second line, contains the reference sequence name.
+- The third line, contains the fields "errors:" and "orientation:" with the
+alignment's number of errors and reference sequence strand.
+- The fourth and sixth lines are the read and reference sequences
+respectively.
+- The fifth line contains a vertical bar for each match between the sequences
+base pairs or a space otherwise.
+
+Alignments are separated with a blank line.
+
+Below is an example consisting of two output records:
+
+```console
+    read_1 (23 nc) 1..23	ref_chr_19	44377..44398
+    ref_chr_19
+    errors: 1 orientation: +
+    CTACAAAGGGAAGCACTTGTCTC
+    |||||||||||||||||| ||||
+    CTACAAAGGGAAGCACTT-TCTC
+
+
+    read_2 (22 nc) 1..22	ref_chr_19	5338..5359
+    ref_chr_19
+    errors: 0 orientation: -
+    TCAAAACTGAGGGGCATTTTCT
+    ||||||||||||||||||||||
+    TCAAAACTGAGGGGCATTTTCT
+```
+
+The report created when setting the flag `-r PATH` consists of a three-field
+table with the following content:
+
+- The read's name
+- The number of alignments found for that read with no errors
+- The number of alignments found for that read with a single error
+
+For example:
+
+```console
+    read_1   0   2
+    read_2   3   1
+    read_3   0   0
 ```
 
 ## Test data
