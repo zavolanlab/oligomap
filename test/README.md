@@ -10,7 +10,7 @@ file contains a set of 250 small RNA sequences build with a custom script.
 In this section, one example per CLI option will be seen. Each of which, will
 use the same set of small RNA sequences and the same set of genomic references.
 Note that the directory used in the third example contains exactly the same
-reference sequence but split in different files.
+reference sequence, but split across different files.
 
 ### Example 1 | Basic usage
 
