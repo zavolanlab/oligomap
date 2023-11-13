@@ -130,6 +130,23 @@ base pairs or a space otherwise.
 
 Alignments are separated with a blank line.
 
+```console
+    read_1 (23 nc) 1..23	ref_chr_19	44377..44398
+    ref_chr_19
+    errors: 1 orientation: +
+    CTACAAAGGGAAGCACTTGTCTC
+    |||||||||||||||||| ||||
+    CTACAAAGGGAAGCACTT-TCTC
+
+
+    read_2 (22 nc) 1..22	ref_chr_19	5338..5359
+    ref_chr_19
+    errors: 0 orientation: -
+    TCAAAACTGAGGGGCATTTTCT
+    ||||||||||||||||||||||
+    TCAAAACTGAGGGGCATTTTCT
+```
+
 The report created when setting the flag `-r PATH`, consists on a three-field
 table with the following content:
 
@@ -137,6 +154,11 @@ table with the following content:
 - The number of alignments found for that read with no errors
 - The number of alignments found for that read with a single error
 
+```console
+    read_1   0   2
+    read_2   3   1
+    read_3   0   0
+```
 
 ## Test data
 
