@@ -156,6 +156,8 @@ table with the following content:
 - The number of alignments found for that read with no errors
 - The number of alignments found for that read with a single error
 
+For example:
+
 ```console
     read_1   0   2
     read_2   3   1
