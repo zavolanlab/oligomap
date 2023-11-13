@@ -130,6 +130,8 @@ base pairs or a space otherwise.
 
 Alignments are separated with a blank line.
 
+Below is an example consisting of two output records:
+
 ```console
     read_1 (23 nc) 1..23	ref_chr_19	44377..44398
     ref_chr_19
@@ -147,7 +149,7 @@ Alignments are separated with a blank line.
     TCAAAACTGAGGGGCATTTTCT
 ```
 
-The report created when setting the flag `-r PATH`, consists on a three-field
+The report created when setting the flag `-r PATH` consists of a three-field
 table with the following content:
 
 - The read's name
